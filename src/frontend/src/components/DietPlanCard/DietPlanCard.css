@@ -1,0 +1,88 @@
+.diet-card {
+  background: var(--nc-card);
+  border: 1px solid var(--nc-border);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.diet-card:hover {
+  border-color: rgba(24, 183, 167, 0.3);
+  box-shadow: 0 8px 32px rgba(24, 183, 167, 0.12);
+}
+
+.diet-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  background: rgba(24, 183, 167, 0.06);
+  border-bottom: 1px solid var(--nc-border);
+}
+
+.diet-card__day-badge {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--nc-teal);
+  background: rgba(24, 183, 167, 0.12);
+  padding: 4px 14px;
+  border-radius: 20px;
+  border: 1px solid rgba(24, 183, 167, 0.25);
+}
+
+.diet-card__total {
+  font-size: 12px;
+  color: var(--nc-muted);
+  font-weight: 500;
+}
+
+.diet-card__meals {
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.diet-card__meals--compact {
+  gap: 10px;
+  padding: 12px 16px;
+}
+
+.diet-card__meal {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.diet-card__meal-icon {
+  font-size: 18px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.diet-card__meal-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.diet-card__meal-label {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--nc-teal);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.diet-card__meal-text {
+  font-size: 13.5px;
+  color: var(--nc-heading);
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.diet-card__meal-meta {
+  font-size: 12px;
+  color: var(--nc-muted);
+  line-height: 1.4;
+}

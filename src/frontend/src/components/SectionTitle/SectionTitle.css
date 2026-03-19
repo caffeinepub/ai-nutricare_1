@@ -1,0 +1,57 @@
+.section-title {
+  margin-bottom: 48px;
+}
+
+.section-title--centered {
+  text-align: center;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 56px;
+}
+
+.section-title__badge {
+  display: inline-block;
+  background: rgba(24, 183, 167, 0.12);
+  color: var(--nc-teal);
+  border: 1px solid rgba(24, 183, 167, 0.3);
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 5px 14px;
+  margin-bottom: 16px;
+}
+
+.section-title__heading {
+  font-size: 36px;
+  font-weight: 800;
+  color: var(--nc-heading);
+  line-height: 1.18;
+  margin-bottom: 16px;
+}
+
+.section-title__highlight {
+  background: linear-gradient(135deg, var(--nc-teal), var(--nc-green));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.section-title__subtitle {
+  font-size: 16px;
+  color: var(--nc-body);
+  line-height: 1.7;
+  max-width: 600px;
+}
+
+.section-title--centered .section-title__subtitle {
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .section-title__heading {
+    font-size: 28px;
+  }
+}

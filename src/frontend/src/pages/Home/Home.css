@@ -1,0 +1,250 @@
+.home__section {
+  position: relative;
+}
+
+.trust-banner {
+  background: linear-gradient(90deg, var(--nc-teal) 0%, var(--nc-green) 100%);
+  padding: 16px 0;
+}
+
+.trust-banner__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: #07111e;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.trust-banner__icon,
+.trust-banner__arrow {
+  opacity: 0.7;
+}
+
+.home__features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.home__workflow {
+  display: flex;
+  align-items: flex-start;
+  gap: 0;
+  overflow-x: auto;
+  padding-bottom: 12px;
+}
+
+.home__workflow-item {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.home__workflow-card {
+  background: var(--nc-card);
+  border: 1px solid var(--nc-border);
+  border-radius: 14px;
+  padding: 22px 18px;
+  text-align: center;
+  width: 160px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.home__workflow-card:hover {
+  border-color: rgba(24, 183, 167, 0.4);
+  box-shadow: 0 8px 30px rgba(24, 183, 167, 0.15);
+  transform: translateY(-4px);
+}
+
+.home__workflow-icon {
+  font-size: 26px;
+  margin-bottom: 8px;
+}
+
+.home__workflow-num {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  background: rgba(24, 183, 167, 0.15);
+  border-radius: 50%;
+  font-size: 10px;
+  font-weight: 800;
+  color: var(--nc-teal);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home__workflow-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--nc-heading);
+  margin-bottom: 6px;
+  line-height: 1.3;
+}
+
+.home__workflow-desc {
+  font-size: 11px;
+  color: var(--nc-muted);
+  margin: 0;
+  line-height: 1.5;
+}
+
+.home__workflow-arrow {
+  color: var(--nc-teal);
+  opacity: 0.5;
+  margin: 0 4px;
+  flex-shrink: 0;
+  margin-top: -20px;
+}
+
+.home__benefits {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+}
+
+.home__benefits-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.home__benefit-card {
+  background: var(--nc-card);
+  border: 1px solid var(--nc-border);
+  border-radius: 14px;
+  padding: 22px 20px;
+  transition: all 0.3s ease;
+}
+
+.home__benefit-card:hover {
+  border-color: rgba(24, 183, 167, 0.3);
+  transform: translateY(-3px);
+}
+
+.home__benefit-icon {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.home__benefit-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--nc-heading);
+  margin-bottom: 8px;
+}
+
+.home__benefit-desc {
+  font-size: 13px;
+  color: var(--nc-muted);
+  margin: 0;
+  line-height: 1.6;
+}
+
+.home__cta-section {
+  padding: 80px 0;
+}
+
+.home__cta-card {
+  background: linear-gradient(
+    135deg,
+    rgba(24, 183, 167, 0.08) 0%,
+    rgba(52, 211, 153, 0.06) 100%
+  );
+  border: 1px solid rgba(24, 183, 167, 0.2);
+  border-radius: 24px;
+  padding: 72px 48px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.home__cta-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 300px;
+  background: radial-gradient(
+    ellipse,
+    rgba(24, 183, 167, 0.15) 0%,
+    transparent 70%
+  );
+  pointer-events: none;
+}
+
+.home__cta-icon {
+  color: var(--nc-teal);
+  margin: 0 auto 20px;
+  display: block;
+}
+
+.home__cta-title {
+  font-size: 40px;
+  font-weight: 800;
+  color: var(--nc-heading);
+  margin-bottom: 16px;
+}
+
+.home__cta-subtitle {
+  font-size: 16px;
+  color: var(--nc-body);
+  max-width: 560px;
+  margin: 0 auto 36px;
+}
+
+.home__cta-actions {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 1100px) {
+  .home__workflow {
+    gap: 0;
+  }
+  .home__workflow-card {
+    width: 140px;
+    padding: 18px 14px;
+  }
+}
+
+@media (max-width: 900px) {
+  .home__features-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .home__benefits {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .trust-banner__inner {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .home__features-grid {
+    grid-template-columns: 1fr;
+  }
+  .home__benefits-grid {
+    grid-template-columns: 1fr;
+  }
+  .home__cta-card {
+    padding: 48px 24px;
+  }
+  .home__cta-title {
+    font-size: 28px;
+  }
+}
